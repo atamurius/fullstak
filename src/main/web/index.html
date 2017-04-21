@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Kotlin Full Stack Test</title>
+        <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+        <script src="/js/lib/kotlin.js"></script>
+        <script src="/js/kotlin-web.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                ReactDOM.render(
+                    React.createElement(window['kotlin-web'].Root),
+                    document.getElementById('content')
+                )
+            })
+        </script>
+    </head>
+    <body>
+        <div id="content"></div>
+    </body>
+</html>
